@@ -1,0 +1,14 @@
+
+h1, h2, p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+img {
+    width: 500px;
+}
+.bt {
+    max-width: 100%;
+    
+}
