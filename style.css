@@ -1,3 +1,8 @@
+body {
+    background-image: url('drone_at_sky.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 h1, h2, p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -6,8 +11,11 @@ h1, h2, p {
 }
 
 img {
+    margin: 50px;
     width: 500px;
+    max-width: 100%;
 }
+
 .bt {
     max-width: 100%;
     
