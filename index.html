@@ -3,27 +3,76 @@
 <html>
 	<head>
 		<Title>Drone Photos and Videos Services</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">			
 		<link href="style.css" rel="stylesheet" />
+		<script src="main.js"></script>
+
+
 
 	</head>
 
 	<body>
-		<h1>Drone Photos and Videos Services</h1>
+		<h1>Drone Photography</h1>
 		<h2>
-			<a href="https://www.facebook.com/profile.php?id=100092299830450">Clique ou toque aqui e visite nossa página no Facebook</a>
+			<a href="https://www.facebook.com/profile.php?id=100092299830450">Facebook Page</a>
 		</h2>
 		<p>
 			<a class="bt" aria-label="Chat on WhatsApp" href="https://wa.me/351938817638?text=Olá. Gostaria%20de%20fazer%20algumas%20fotos%20e%20vídeos%20com%20Drone.">
 				<img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png" />
 			<a />
 		</p>
+		<video autoplay muted loop id="myVideo">
+			<source src="videos/file.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
 		</div>
-		<br>
-		<br>
-		<a data-flickr-embed="true" data-header="true" data-footer="true" href="https://www.flickr.com/photos/198205018@N07/albums/72177720308187114" title="Estação de Trem"><img src="https://live.staticflickr.com/65535/52881350173_d7a4c3bc9d_z.jpg" alt="Estação de Trem"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-		<a data-flickr-embed="true" data-header="true" data-footer="true" href="https://www.flickr.com/photos/198205018@N07/albums/72177720308175210" title="Casa de Campo"><img src="https://live.staticflickr.com/31337/52881329713_9b2d794787_z.jpg" alt="Casa de Campo"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-		<a data-flickr-embed="true" data-header="true" data-footer="true" href="https://www.flickr.com/photos/198205018@N07/albums/72177720308175180" title="Prédios"><img src="https://live.staticflickr.com/65535/52880906806_1258aef3a8_z.jpg" alt="Prédios"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-		<a data-flickr-embed="true" data-header="true" data-footer="true" href="https://www.flickr.com/photos/198205018@N07/albums/72177720308176912" title="Cliente 1"><img src="https://live.staticflickr.com/65535/52881067959_549c3ea338_z.jpg" alt="Cliente 1"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+		<h1>Our photos</h1>
+		<div class="rows">
+			<div class="row">
+				<div class="column">
+					<img src="/photos/DJI_0104.JPG" onclick="exibirImagem('/photos/DJI_0104.JPG')">
+					<img src="/photos/DJI_0105.JPG" onclick="exibirImagem('/photos/DJI_0105.JPG')" alt="">
+					<img src="/photos/DJI_0106.JPG" onclick="exibirImagem('/photos/DJI_0106.JPG')" alt="">
+					<img src="/photos/DJI_0144.JPG" onclick="exibirImagem('/photos/DJI_0144.JPG')" alt="">
+					<img src="/photos/DJI_0145.JPG" onclick="exibirImagem('/photos/DJI_0145.JPG')" alt="">
+					<img src="/photos/DJI_0227.JPG" onclick="exibirImagem('/photos/DJI_0227.JPG')" alt="">
+				</div>
+				<div class="column">
+					<img src="/photos/DJI_0255.JPG" onclick="exibirImagem('/photos/DJI_0255.JPG')" alt="">
+					<img src="/photos/DJI_0256.JPG" onclick="exibirImagem('/photos/DJI_0256.JPG')" alt="">
+					<img src="/photos/DJI_0257.JPG" onclick="exibirImagem('/photos/DJI_0257.JPG')" alt="">
+					<img src="/photos/DJI_0262.JPG" onclick="exibirImagem('/photos/DJI_0262.JPG')" alt="">
+					<img src="/photos/DJI_0263.JPG" onclick="exibirImagem('/photos/DJI_0263.JPG')" alt="">
+					<img src="/photos/DJI_0263_result.jpg" onclick="exibirImagem('/photos/DJI_0263_result.JPG')" alt="">
+				</div>
+				<div class="column">
+					<img src="/photos/DJI_0264.JPG" onclick="exibirImagem('/photos/DJI_0264.JPG')" alt="">
+					<img src="/photos/DJI_0264_result.jpg" onclick="exibirImagem('/photos/DJI_0264_result.JPG')" alt="">
+					<img src="/photos/DJI_0371.JPG" onclick="exibirImagem('/photos/DJI_0371.JPG')" alt="">
+					<img src="/photos/DJI_0372.JPG" onclick="exibirImagem('/photos/DJI_0372.JPG')" alt="">
+					<img src="/photos/DJI_0373.JPG" onclick="exibirImagem('/photos/DJI_0373.JPG')" alt="">
+					<img src="/photos/DJI_0374.JPG" onclick="exibirImagem('/photos/DJI_0374.JPG')" alt="">
+					<img src="/photos/DJI_0375.JPG" onclick="exibirImagem('/photos/DJI_0375.JPG')" alt="">
+				</div>
+			</div>
+		</div>
+
+
+		<h1>Flickr Gallery</h1>
+		<div class="row">
+			<div class="column">
+				<a data-flickr-embed="true"  href="https://www.flickr.com/photos/198205018@N07" title=""><img src="https://live.staticflickr.com/65535/52887622304_2491904d9e_z.jpg" width="640" height="480" alt=""/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true"  href="https://www.flickr.com/photos/198205018@N07/albums/72177720308187114" title="Estação de Trem"><img src="https://live.staticflickr.com/65535/52881350173_d7a4c3bc9d_z.jpg" alt="Estação de Trem"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			</div>
+			<div class="column">
+				<a data-flickr-embed="true"  href="https://www.flickr.com/photos/198205018@N07/albums/72177720308175210" title="Casa de Campo"><img src="https://live.staticflickr.com/31337/52881329713_9b2d794787_z.jpg" alt="Casa de Campo"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<a data-flickr-embed="true"  href="https://www.flickr.com/photos/198205018@N07/albums/72177720308175180" title="Prédios"><img src="https://live.staticflickr.com/65535/52880906806_1258aef3a8_z.jpg" alt="Prédios"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			</div>
+			<div class="column">
+					<a data-flickr-embed="true"  href="https://www.flickr.com/photos/198205018@N07/albums/72177720308176912" title="Cliente 1"><img src="https://live.staticflickr.com/65535/52881067959_549c3ea338_z.jpg" alt="Cliente 1"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			</div>
+
+		</div>
 	</body>
 </html>
 
