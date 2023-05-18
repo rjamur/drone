@@ -4,36 +4,82 @@
 
 body {
     background-image: url('drone_at_sky.jpg');
+    background-size: initial;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    margin: 0;
+    margin-bottom: 50px;
 }
 
-h1, h2, p {
+.background-escurecido {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+h1,
+h2,
+p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 50px;
+}
+
+.buttonscontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonscontainer a {
+    margin: 0 10px;
+}
+
+.buttonscontainer img {
+    display: block;
+}
+
+.flickr {
+    display: flex;
+    justify-content: center;
+}
+
+.flickr a img {
+    border: 5px, solid, #202020;
+
 }
 
 h1 {
-    color:goldenrod;
-    text-shadow: 3px 3px black;
+    color: #202020;
+    text-shadow: 3px 3px #659965;
 }
 
-video {
-    text-align: center;
-    width: 100%;
-    border: 4px;
-    border-style: solid;
-    border-color: gray;
-    border-radius: 5px;
+.video {
+    display: flex;
+    justify-content: center;
     margin: 20px;
+}
+
+.video video {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    border: 4px, solid, black;
+    border-radius: 5px;
+    margin: 0 auto;
 }
 
 .rows {
     width: 100%;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -51,9 +97,7 @@ video {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-    border: 5px;
-    border-color: gray;
-    border-style:solid;
+    border: 5px, solid, black;
     border-radius: 5px;
 }
 
@@ -75,5 +119,16 @@ video {
         flex: 100%;
         max-width: 100%;
     }
-}
 
+    .flickr {
+        max-width: 100%;
+    }
+    .flickr a img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    video {
+        max-width: 100%;
+    }
+}
